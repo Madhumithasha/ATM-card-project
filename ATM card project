@@ -1,0 +1,17 @@
+balance=10000
+print("welcom to atm")
+a=int(input("enter pin no"))
+if(a==2003):
+    b=int(input("enater the option"))
+    if b==1:
+            print(balance,"is the balance")
+    if b==2:
+        amount1=int(input("cash"))
+        c = balance + amount1
+        print(c,"new balance")
+    if b==3:
+        amount2=int(input("cash"))
+        d=balance-amount2
+        print(d,"new balance")
+else:
+    print("invalid pin")
